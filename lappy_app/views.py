@@ -9,15 +9,10 @@ def landing(request, category=None):
         
         context["products"] = Products.objects.all()
         context["categories"] = Categories.objects.all()
-        print(print(context["categories"]))
-
         return render(request, "index.html", context)
     else:
-        print(category)
         context["products"] = Products.objects.filter(category_id = category)
-        print(context["products"])
         context["categories"] = Categories.objects.all()
-        print(print(context["categories"]))
         return render(request, "index.html", context)
 
 
@@ -37,7 +32,6 @@ def detail_view(request, id):
 def contact_view(request):
     if request.method == "POST":
         form = ContactsForm(request.POST)
-        print(form)
         if form.is_valid():
             form.save()
             return redirect('contact')
