@@ -34,7 +34,7 @@ MEDIA_URL = '/media/'
 SECRET_KEY = 'django-insecure-lbbnlg^nf+c&-^#7cf7e20y4q-5-+7434pk9wsz5ddw#!5m)jt'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['giant-mirna-adammmmd.koyeb.app', '127.0.0.1']
 
@@ -86,23 +86,23 @@ WSGI_APPLICATION = 'lappy_project.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-# DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.sqlite3',
-#        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'), 
-#    }
-# }
-
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'koyebdb',
-        'USER': 'koyeb-adm',
-        'PASSWORD': 't10WoGMqLkHp',
-        'HOST': 'ep-dawn-morning-a263pmpu.eu-central-1.pg.koyeb.app',
-        'OPTIONS': {'sslmode': 'require'},
-    }
+   'default': {
+       'ENGINE': 'django.db.backends.sqlite3',
+       'NAME': os.path.join(BASE_DIR, 'db.sqlite3'), 
+   }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'koyebdb',
+#         'USER': 'koyeb-adm',
+#         'PASSWORD': 't10WoGMqLkHp',
+#         'HOST': 'ep-dawn-morning-a263pmpu.eu-central-1.pg.koyeb.app',
+#         'OPTIONS': {'sslmode': 'require'},
+#     }
+# }
 
 
 # Password validation
