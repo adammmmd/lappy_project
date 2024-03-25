@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'lappy_app/static'),
+    os.path.join(BASE_DIR, 'lappy_app', 'static'),
 )
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
@@ -36,7 +36,7 @@ SECRET_KEY = 'django-insecure-lbbnlg^nf+c&-^#7cf7e20y4q-5-+7434pk9wsz5ddw#!5m)jt
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['giant-mirna-adammmmd.koyeb.app']
+ALLOWED_HOSTS = ['giant-mirna-adammmmd.koyeb.app', '127.0.0.1']
 
 
 # Application definition
@@ -89,7 +89,7 @@ WSGI_APPLICATION = 'lappy_project.wsgi.application'
 # DATABASES = {
 #    'default': {
 #        'ENGINE': 'django.db.backends.sqlite3',
-#        'NAME': BASE_DIR / 'db.sqlite3',
+#        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'), 
 #    }
 # }
 
@@ -139,7 +139,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
-STATIC_URL = 'static/'
+# STATIC_URL = 'static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
