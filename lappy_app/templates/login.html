@@ -2,19 +2,6 @@
 
 {% include "components/navbar.html" %}
 
-<div class="container-fluid my-5 py-5">
-    <div class="container my-5 py-5" style="outline: 1px solid red;">
-        <div class="my-5 border">
-
-        <h1>Login</h1>
-        <form method="POST">
-            {% csrf_token %}
-            {{ form.as_p }}
-            <button type="submit">Login</button>
-            <a href="{% url 'register' %}">Dont have Account Create</a>
-        </form>
-        </div>
-    </div>
-</div>
+{% include "components/login_detail.html" %}
 
 {% include "components/footer.html" %}
