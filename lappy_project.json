@@ -1,0 +1,18 @@
+{
+  "builds": [
+    {
+      "src": "lappy_project/wsgi.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "lappy_project/wsgi.py"
+    }
+  ],
+  "DISABLE_COLLECTSTATIC": {
+    "description": "Don't run python manage.py collecstatic --noinput on deploy",
+    "value": "1"
+  }
+}
