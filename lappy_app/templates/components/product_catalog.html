@@ -15,7 +15,7 @@
                                         <span class="text-dark" style="width: 130px;">All Products</span>
                                     </a>
                                 </li>
-                                {% for category in categories%}
+                                {% for category in categories %}
                                 <li class="nav-item">
                                     <a class="nav-item d-flex py-2 m-2 bg-light rounded-pill" data-bs-toggle="pill" href="{% url 'landing' category=category.id%}">
                                         <span class="text-dark" style="width: 130px;">{{category.category_name}}</span>
