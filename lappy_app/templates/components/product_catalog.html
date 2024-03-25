@@ -21,6 +21,8 @@
                                         <span class="text-dark" style="width: 130px;">{{category.category_name}}</span>
                                     </a>
                                 </li>
+                                {% empty %}
+                                <li></li>
                                 {% endfor %}
                                 <!-- <li class="nav-item">
                                     <a class="d-flex m-2 py-2 bg-light rounded-pill" data-bs-toggle="pill"

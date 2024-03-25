@@ -34,7 +34,7 @@ MEDIA_URL = '/media/'
 SECRET_KEY = 'django-insecure-lbbnlg^nf+c&-^#7cf7e20y4q-5-+7434pk9wsz5ddw#!5m)jt'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['giant-mirna-adammmmd.koyeb.app']
 
