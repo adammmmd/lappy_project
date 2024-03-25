@@ -87,23 +87,23 @@ WSGI_APPLICATION = 'lappy_project.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-DATABASES = {
-   'default': {
-       'ENGINE': 'django.db.backends.sqlite3',
-       'NAME': os.path.join(BASE_DIR, 'db.sqlite3'), 
-   }
-}
-
 # DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'koyebdb',
-#         'USER': 'koyeb-adm',
-#         'PASSWORD': 't10WoGMqLkHp',
-#         'HOST': 'ep-dawn-morning-a263pmpu.eu-central-1.pg.koyeb.app',
-#         'OPTIONS': {'sslmode': 'require'},
-#     }
+#    'default': {
+#        'ENGINE': 'django.db.backends.sqlite3',
+#        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'), 
+#    }
 # }
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'koyebdb',
+        'USER': 'koyeb-adm',
+        'PASSWORD': 't10WoGMqLkHp',
+        'HOST': 'ep-dawn-morning-a263pmpu.eu-central-1.pg.koyeb.app',
+        'OPTIONS': {'sslmode': 'require'},
+    }
+}
 
 
 # Password validation
