@@ -26,3 +26,4 @@ urlpatterns = [
 
 handler404 = 'lappy_app.views.custom_404'
 
+
