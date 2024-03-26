@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login, logout
+from django.contrib.auth.decorators import login_required
 from .form import *
 from .models import *
 
@@ -38,7 +39,7 @@ def contact_view(request):
             return redirect('contact')
     return render(request, "contact.html")
 
-
+# @login_required()   
 def cart_view(request):
     if request.method == "POST":
         pass

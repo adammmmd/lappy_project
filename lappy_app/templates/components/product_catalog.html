@@ -40,7 +40,7 @@
                                         <div class="p-4 bg-light border-top-0 rounded-bottom">
                                             <a href="{% url 'detail' id=product.pk %}">
                                                 <h4>{{product.product_name}}</h4>
-                                                <p>{{product.product_description}}</p>
+                                                <p style="height: 100px; overflow: auto;">{{product.product_description}}</p>
                                             </a>
                                             <div class="d-flex flex-column justify-content-between flex-lg-wrap">
                                                 <p class="text-dark fs-5 fw-bold mb-4">Rp {{ product.price }}</p>

@@ -34,7 +34,7 @@
                                 <i class="fa fa-star text-secondary"></i>
                                 <i class="fa fa-star"></i>
                             </div>
-                            <p class="mb-4">{{product.product_description}}</p>
+                            <p class="mb-4" style="max-width: 300px; max-height: 50px; text-overflow: ellipsis; overflow: hidden;">{{product.product_description}}</p>
                             <!-- <p class="mb-4">Susp endisse ultricies nisi vel quam suscipit. Sabertooth peacock flounder;
                                 chain pickerel hatchetfish, pencilfish snailfish</p> -->
                             <div class="input-group quantity mb-5" style="width: 100px;">
@@ -68,7 +68,7 @@
                         <div class="tab-content mb-5">
                             <div class="tab-pane active" id="nav-about" role="tabpanel"
                                 aria-labelledby="nav-about-tab">
-                                <div class="d-flex flex-column justify-content-center align-items-center w-100">
+                                <div class="d-flex flex-column justify-content-center align-items-center w-100" style="min-height: 400px;">
                                     <p class="align-self-center text-start text-wrap" style="width: 500px;">{{product.product_description}}</p>
                                     <!-- <p>Sabertooth peacock flounder; chain pickerel hatchetfish, pencilfish snailfish
                                         filefish Antarctic
@@ -125,12 +125,13 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="tab-pane" id="nav-mission" role="tabpanel" aria-labelledby="nav-mission-tab">
+                            <div class="tab-pane" style="max-height: 400px; overflow: auto;" id="nav-mission"
+                                role="tabpanel" aria-labelledby="nav-mission-tab">
                                 {% if reviews|length < 1 %}
                                 <p class="text-center my-auto" style="height: 400px;">Tambahkan Review</p>
                                 {% else %}
                                 {% for review in reviews %}
-                                <div class="d-flex border-bottom mt-3">
+                                <div class="d-flex border-bottom mt-3" >
                                     <!-- <img src="img/avatar.jpg" class="img-fluid rounded-circle p-3" style="width: 100px; height: 100px;" alt=""> -->
                                     <div class="w-100">
                                         <p class="mb-2" style="font-size: 14px;">{{review.datetime |date:"N j, Y"}}
