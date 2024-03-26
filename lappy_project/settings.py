@@ -42,6 +42,7 @@ ALLOWED_HOSTS = ['giant-mirna-adammmmd.koyeb.app', '127.0.0.1', 'localhost']
 # Application definition
 
 INSTALLED_APPS = [
+    'django.contrib.humanize',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

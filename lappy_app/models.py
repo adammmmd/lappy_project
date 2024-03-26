@@ -48,7 +48,7 @@ class Products (models.Model):
     supplier_id = models.IntegerField()
     category_id = models.CharField(max_length=20)
     unit = models.CharField(max_length=200)
-    price = models.DecimalField(max_digits=15, decimal_places=3)
+    price = models.IntegerField()
     photo = models.ImageField(upload_to='images', blank=True, null=True)
 
     def image_tag(self):
