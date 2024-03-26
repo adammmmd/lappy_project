@@ -46,7 +46,7 @@ class Products (models.Model):
     product_name = models.CharField(max_length=200)
     product_description = models.TextField()
     supplier_id = models.IntegerField()
-    category_id = models.IntegerField()
+    category_id = models.CharField(max_length=20)
     unit = models.CharField(max_length=200)
     price = models.DecimalField(max_digits=15, decimal_places=3)
     photo = models.ImageField(upload_to='images', blank=True, null=True)
