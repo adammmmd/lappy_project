@@ -9,7 +9,7 @@ class Customers (models.Model):
     city = models.CharField(max_length=200)
     postal_code = models.CharField(max_length=10)
     country = models.CharField(max_length=200)
-    photo = models.ImageField(upload_to='images')
+    photo = models.ImageField(upload_to='images', blank=True, null=True)
 
     def image_tag(self):
         return mark_safe('<img src="%s" width="100px" height="100px" />'%(self.photo.url))
@@ -23,7 +23,7 @@ class Employees (models.Model):
     last_name = models.CharField(max_length=200)
     first_name = models.CharField(max_length=200)
     birth_date = models.DateField()
-    photo = models.ImageField(upload_to='images')
+    photo = models.ImageField(upload_to='images', blank=True, null=True)
     notes = models.TextField()
 
     def image_tag(self):
@@ -49,7 +49,7 @@ class Products (models.Model):
     category_id = models.IntegerField()
     unit = models.CharField(max_length=200)
     price = models.DecimalField(max_digits=15, decimal_places=3)
-    photo = models.ImageField(upload_to='images')
+    photo = models.ImageField(upload_to='images', blank=True, null=True)
 
     def image_tag(self):
         return mark_safe('<img src="%s" width="100px" height="100px" />'%(self.photo.url))
