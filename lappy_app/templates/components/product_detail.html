@@ -13,17 +13,17 @@
     <!-- Single Product Start -->
     <div class="container-fluid py-5 mt-5">
         <div class="container py-5">
-            <div class="row g-4 mb-5">
-                <div class="col-lg-8 col-xl-9">
-                    <div class="row g-4">
-                        <div class="col-lg-6">
+            <div class=" mb-5">
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                    <div class="col-lg-12 d-flex justify-content-center align-items-center" style="gap: 20px;">
+                        <div>
                             <div class="border rounded d-flex justify-content-center align-items-center">
                                 <a href="#">
-                                    <img src="{{product.photo.url}}" class="img-fluid rounded" alt="Image" style="object-fit: cover;">
+                                    <img src="{{product.photo.url}}" class="img-fluid rounded" alt="Image" style="width: 350px; height: 250px; object-fit: cover;">
                                 </a>
                             </div>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="d-flex flex-column flex-start ps-5">
                             <h4 class="fw-bold mb-3">{{product.product_name}}</h4>
                             <p class="mb-3">Category: {{product.category_id}}</p>
                             <h5 class="fw-bold mb-3">Rp {{product.price}} </h5>
@@ -53,143 +53,145 @@
                             <a href="#" class="btn border border-secondary rounded-pill px-4 py-2 mb-4 text-primary"><i
                                     class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
                         </div>
-                        <div class="col-lg-12">
-                            <nav>
-                                <div class="nav nav-tabs mb-3">
-                                    <button class="nav-link active border-white border-bottom-0" type="button"
-                                        role="tab" id="nav-about-tab" data-bs-toggle="tab" data-bs-target="#nav-about"
-                                        aria-controls="nav-about" aria-selected="true">Description</button>
-                                    <button class="nav-link border-white border-bottom-0" type="button" role="tab"
-                                        id="nav-mission-tab" data-bs-toggle="tab" data-bs-target="#nav-mission"
-                                        aria-controls="nav-mission" aria-selected="false">Reviews</button>
-                                </div>
-                            </nav>
-                            <div class="tab-content mb-5">
-                                <div class="tab-pane active" id="nav-about" role="tabpanel"
-                                    aria-labelledby="nav-about-tab">
-                                    <p>{{product.product_description}}</p>
+                    </div>
+                    <div class="col-lg-12">
+                        <nav>
+                            <div class="nav nav-tabs mb-3 d-flex justify-content-center align-items-center">
+                                <button class="nav-link active border-white border-bottom-0" type="button"
+                                    role="tab" id="nav-about-tab" data-bs-toggle="tab" data-bs-target="#nav-about"
+                                    aria-controls="nav-about" aria-selected="true">Description</button>
+                                <button class="nav-link border-white border-bottom-0" type="button" role="tab"
+                                    id="nav-mission-tab" data-bs-toggle="tab" data-bs-target="#nav-mission"
+                                    aria-controls="nav-mission" aria-selected="false">Reviews</button>
+                            </div>
+                        </nav>
+                        <div class="tab-content mb-5">
+                            <div class="tab-pane active" id="nav-about" role="tabpanel"
+                                aria-labelledby="nav-about-tab">
+                                <div class="d-flex flex-column justify-content-center align-items-center w-100">
+                                    <p class="align-self-center text-start text-wrap" style="width: 500px;">{{product.product_description}}</p>
                                     <!-- <p>Sabertooth peacock flounder; chain pickerel hatchetfish, pencilfish snailfish
                                         filefish Antarctic
                                         icefish goldeye aholehole trumpetfish pilot fish airbreathing catfish, electric
                                         ray sweeper.</p> -->
-                                    <div class="px-2">
-                                        <div class="row g-4">
-                                            <div class="col-6">
-                                                <div
-                                                    class="row bg-light align-items-center text-center justify-content-center py-2">
-                                                    <div class="col-6">
-                                                        <p class="mb-0">Weight</p>
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <p class="mb-0">1 kg</p>
-                                                    </div>
+                                    <div class="d-flex justify-content-center w-100">
+                                        <div class="col-6">
+                                            <div
+                                                class="row border-bottom align-items-center text-start justify-content-center py-2">
+                                                <div class="col-6">
+                                                    <p class="mb-0">Chip</p>
                                                 </div>
-                                                <div
-                                                    class="row text-center align-items-center justify-content-center py-2">
-                                                    <div class="col-6">
-                                                        <p class="mb-0">Country of Origin</p>
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <p class="mb-0">Agro Farm</p>
-                                                    </div>
+                                                <div class="col-6">
+                                                    <p class="mb-0">Chip X3</p>
                                                 </div>
-                                                <div
-                                                    class="row bg-light text-center align-items-center justify-content-center py-2">
-                                                    <div class="col-6">
-                                                        <p class="mb-0">Quality</p>
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <p class="mb-0">Organic</p>
-                                                    </div>
+                                            </div>
+                                            <div
+                                                class="row border-bottom text-start align-items-start justify-content-center py-2">
+                                                <div class="col-6">
+                                                    <p class="mb-0">Layar</p>
                                                 </div>
-                                                <div
-                                                    class="row text-center align-items-center justify-content-center py-2">
-                                                    <div class="col-6">
-                                                        <p class="mb-0">Сheck</p>
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <p class="mb-0">Healthy</p>
-                                                    </div>
+                                                <div class="col-6">
+                                                    <p class="mb-0">Layar Liquid Retina</p>
                                                 </div>
-                                                <div
-                                                    class="row bg-light text-center align-items-center justify-content-center py-2">
-                                                    <div class="col-6">
-                                                        <p class="mb-0">Min Weight</p>
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <p class="mb-0">250 Kg</p>
-                                                    </div>
+                                            </div>
+                                            <div
+                                                class="row border-bottom text-start align-items-center justify-content-center py-2">
+                                                <div class="col-6">
+                                                    <p class="mb-0">Memory</p>
+                                                </div>
+                                                <div class="col-6">
+                                                    <p class="mb-0">8GB</p>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="row border-bottom text-start align-items-center justify-content-center py-2">
+                                                <div class="col-6">
+                                                    <p class="mb-0">Daya Baterai</p>
+                                                </div>
+                                                <div class="col-6">
+                                                    <p class="mb-0">Adaptor Daya USB‑C 70 W</p>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="row border-bottom text-start align-items-center justify-content-center py-2">
+                                                <div class="col-6">
+                                                    <p class="mb-0">Penimpanan</p>
+                                                </div>
+                                                <div class="col-6">
+                                                    <p class="mb-0">512 GB</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="tab-pane" id="nav-mission" role="tabpanel"
-                                    aria-labelledby="nav-mission-tab">
-                                    {% for review in reviews %}
-                                    <div class="d-flex border-bottom mt-3">
-                                        <!-- <img src="img/avatar.jpg" class="img-fluid rounded-circle p-3" style="width: 100px; height: 100px;" alt=""> -->
-                                        <div class="w-100">
-                                            <p class="mb-2" style="font-size: 14px;">{{review.datetime |date:"N j, Y"}}
-                                            </p>
-                                            <div class="d-flex justify-content-between">
-                                                <h5>{{review.customer_name}}</h5>
-                                                <div class="d-flex mb-3">
-                                                    {% if review.rate == 1 %}
-                                                    <i class="fa fa-star text-secondary"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    {% elif review.rate == 2 %}
-                                                    <i class="fa fa-star text-secondary"></i>
-                                                    <i class="fa fa-star text-secondary"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    {% elif review.rate == 3 %}
-                                                    <i class="fa fa-star text-secondary"></i>
-                                                    <i class="fa fa-star text-secondary"></i>
-                                                    <i class="fa fa-star text-secondary"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    {% elif review.rate == 4 %}
-                                                    <i class="fa fa-star text-secondary"></i>
-                                                    <i class="fa fa-star text-secondary"></i>
-                                                    <i class="fa fa-star text-secondary"></i>
-                                                    <i class="fa fa-star text-secondary"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    {% elif review.rate == 5 %}
-                                                    <i class="fa fa-star text-secondary"></i>
-                                                    <i class="fa fa-star text-secondary"></i>
-                                                    <i class="fa fa-star text-secondary"></i>
-                                                    <i class="fa fa-star text-secondary"></i>
-                                                    <i class="fa fa-star text-secondary"></i>
-                                                    {% endif %}
-                                                </div>
-                                            </div>
-                                            <p>{{review.review}}</p>
-                                        </div>
-                                    </div>
-                                    {% endfor %}
-                                </div>
-                                <div class="tab-pane" id="nav-vision" role="tabpanel">
-                                    <p class="text-dark">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et
-                                        tempor sit. Aliqu diam
-                                        amet diam et eos labore. 3</p>
-                                    <p class="mb-0">Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos
-                                        labore.
-                                        Clita erat ipsum et lorem et sit</p>
                                 </div>
                             </div>
+                            <div class="tab-pane" id="nav-mission" role="tabpanel" aria-labelledby="nav-mission-tab">
+                                {% if reviews|length < 1 %}
+                                <p class="text-center my-auto" style="height: 400px;">Tambahkan Review</p>
+                                {% else %}
+                                {% for review in reviews %}
+                                <div class="d-flex border-bottom mt-3">
+                                    <!-- <img src="img/avatar.jpg" class="img-fluid rounded-circle p-3" style="width: 100px; height: 100px;" alt=""> -->
+                                    <div class="w-100">
+                                        <p class="mb-2" style="font-size: 14px;">{{review.datetime |date:"N j, Y"}}
+                                        </p>
+                                        <div class="d-flex justify-content-between">
+                                            <h5>{{review.customer_name}}</h5>
+                                            <div class="d-flex mb-3">
+                                                {% if review.rate == 1 %}
+                                                <i class="fa fa-star text-secondary"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                {% elif review.rate == 2 %}
+                                                <i class="fa fa-star text-secondary"></i>
+                                                <i class="fa fa-star text-secondary"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                {% elif review.rate == 3 %}
+                                                <i class="fa fa-star text-secondary"></i>
+                                                <i class="fa fa-star text-secondary"></i>
+                                                <i class="fa fa-star text-secondary"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                {% elif review.rate == 4 %}
+                                                <i class="fa fa-star text-secondary"></i>
+                                                <i class="fa fa-star text-secondary"></i>
+                                                <i class="fa fa-star text-secondary"></i>
+                                                <i class="fa fa-star text-secondary"></i>
+                                                <i class="fa fa-star"></i>
+                                                {% elif review.rate == 5 %}
+                                                <i class="fa fa-star text-secondary"></i>
+                                                <i class="fa fa-star text-secondary"></i>
+                                                <i class="fa fa-star text-secondary"></i>
+                                                <i class="fa fa-star text-secondary"></i>
+                                                <i class="fa fa-star text-secondary"></i>
+                                                {% endif %}
+                                            </div>
+                                        </div>
+                                        <p>{{review.review}}</p>
+                                    </div>
+                                </div>
+                                {% endfor %}
+                                {% endif %}
+                            </div>
+                            <div class="tab-pane" id="nav-vision" role="tabpanel">
+                                <p class="text-dark">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et
+                                    tempor sit. Aliqu diam
+                                    amet diam et eos labore. 3</p>
+                                <p class="mb-0">Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos
+                                    labore.
+                                    Clita erat ipsum et lorem et sit</p>
+                            </div>
                         </div>
-                        {% include 'components/review.html' %}
-                        
                     </div>
+                    {% include 'components/review.html' %}                        
                 </div>
-                <div class="col-lg-4 col-xl-3">
+                <!-- <div class="col-lg-4 col-xl-3">
                     <div class="row g-4 fruite">
-                        <!-- <div class="col-lg-12">
+                        <div class="col-lg-12">
                             <div class="input-group w-100 mx-auto d-flex mb-4">
                                 <input type="search" class="form-control p-3" placeholder="keywords"
                                     aria-describedby="search-icon-1">
@@ -199,7 +201,7 @@
                             <div class="mb-4">
                                 <h4>Categories</h4>
                                 <ul class="list-unstyled fruite-categorie">
-                                    {% for category in categories%}
+                                    {% for category in categories %}
                                     <li>
                                         <div class="d-flex justify-content-between fruite-name">
                                             <a href="#">
@@ -210,8 +212,8 @@
                                     {% endfor %}
                                 </ul>
                             </div>
-                        </div> -->
-                        <!-- <div class="col-lg-12">
+                        </div>
+                        <div class="col-lg-12">
                             <h4 class="mb-4">Featured products</h4>
                             <div class="d-flex align-items-center justify-content-start">
                                 <div class="rounded" style="width: 100px; height: 100px;">
@@ -341,9 +343,9 @@
                                     <h3 class="text-secondary fw-bold">Fresh <br> Fruits <br> Banner</h3>
                                 </div>
                             </div>
-                        </div> -->
+                        </div>
                     </div>
-                </div>
+                </div> -->
             </div>
             <h1 class="fw-bold mb-0">Related products</h1>
             <div class="vesitable">
