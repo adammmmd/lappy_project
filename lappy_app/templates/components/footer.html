@@ -13,11 +13,11 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="position-relative mx-auto">
-                                <input class="form-control border-0 w-100 py-3 px-4 rounded-pill" type="number"
-                                    placeholder="Your Email">
-                                <button type="submit"
-                                    class="btn btn-primary border-0 border-secondary py-3 px-4 position-absolute rounded-pill text-white"
-                                    style="top: 0; right: 0;">Subscribe Now</button>
+                                <form action="{% url 'subscribe' %}" method="POST">
+                                    {% csrf_token %}
+                                    <input class="form-control border-0 w-100 py-3 px-4 rounded-pill" type="email" id="subscription_email" name="subscription_email" placeholder="Your Email">
+                                    <button type="submit" class="btn btn-primary border-0 border-secondary py-3 px-4 position-absolute rounded-pill text-white" style="top: 0; right: 0;">Subscribe Now</button>
+                                </form>
                             </div>
                         </div>
                         <!-- <div class="col-lg-3">
@@ -68,9 +68,9 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="footer-item">
                             <h4 class="text-light mb-3">Contact</h4>
-                            <p>Address: Mampang, Jakarta Selatan</p>
-                            <p>Email: admin@lappy.com</p>
-                            <p>Phone: +0123 4567 8910</p>
+                            <a href="https://maps.app.goo.gl/277Rpi4eue1D2koR6">Address: Mampang, Jakarta Selatan</a><br>
+                            <a href="mailto:test@test.com" >Email: admin@lappy.com</a><br>
+                            <a href="tel:+012345678910">Phone: +0123 4567 8910</a><br>
                             <p>Payment Accepted</p>
                             <img src="{% static 'img/payment.png' %}" class="img-fluid" alt="">
                         </div>

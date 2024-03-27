@@ -1,7 +1,7 @@
 from django import forms
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
-from .models import Contacts, Reviews
+from .models import Contacts, Reviews, Subscriptions
 
 class ContactsForm(forms.ModelForm):
     class Meta: 
@@ -21,3 +21,8 @@ class SignupForm(UserCreationForm):
 class LoginForm(forms.Form):
     username = forms.CharField()
     password = forms.CharField(widget=forms.PasswordInput)
+
+class SubscriptionsForm(forms.ModelForm):
+    class Meta: 
+        model = Subscriptions
+        fields = ['subscription_email']

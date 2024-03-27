@@ -17,9 +17,6 @@ def landing(request, category=None):
         context["categories"] = Categories.objects.all()
         return render(request, "index.html", context)
 
-
-
-
 def detail_view(request, id):
     context ={}
 
@@ -81,6 +78,14 @@ def login_view(request):
 def logout_view(request):
     logout(request)
     return redirect('login')
+
+def subscribes_view(request):
+        if request.method == "POST":
+            form = SubscriptionsForm(request.POST)
+            print(request)
+            if form.is_valid():
+                form.save()
+                return redirect('landing')
 
 
 def custom_404(request, exception):

@@ -79,6 +79,12 @@ class ReviewsAdmin(ImportExportModelAdmin, admin.ModelAdmin):
 
 admin.site.register(Reviews, ReviewsAdmin)
 
+class SubscriptionsAdmin(ImportExportModelAdmin, admin.ModelAdmin):
+    list_display = ('id','subscription_email')
+    list_filter = ('id', 'subscription_email')
+    search_fields = ('id', 'subscription_email')
+
+admin.site.register(Subscriptions, SubscriptionsAdmin)
 
 
 

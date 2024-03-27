@@ -84,4 +84,7 @@ class Reviews (models.Model):
     rate = models.IntegerField()
     datetime = models.DateTimeField(auto_now_add=True)
 
+class Subscriptions (models.Model):
+    subscription_email = models.EmailField(max_length=200)
+
 
